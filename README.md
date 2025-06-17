@@ -9,3 +9,11 @@
 
 
 
+## Evaluation Metrics for Chunks
+
+| Model     | Accuracy | Precision | Recall | F1 Score |
+|-----------|----------|-----------|--------|----------|
+|    LR     |          |           |        |          |
+|    RF     |          |           |        |          |
+|    SVM    |          |           |        |          |
+|    MLP    |          |           |        |          |
