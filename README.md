@@ -7,7 +7,9 @@
 |    SVM    |          |           |        |          |
 |    MLP    |          |           |        |          |
 
-
+|   LR   |   RF   |  SVM  |  MLP  |
+|--------|--------|-------|-------|
+|        |        |       |       |
 
 ## Evaluation Metrics for Chunks
 
@@ -17,3 +19,7 @@
 |    RF     |0.66 ± 0.04|0.66 ± 0.04|0.66 ± 0.04|0.66 ± 0.04|
 |    SVM    |          |           |        |          |
 |    MLP    |          |           |        |          |
+
+|   LR   |   RF   |  SVM  |  MLP  |
+|--------|--------|-------|-------|
+|   ![image](https://github.com/user-attachments/assets/893a0170-2971-4a4c-9a13-4d6ef3470de4)|        |       |       |
