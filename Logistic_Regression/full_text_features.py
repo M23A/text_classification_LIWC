@@ -14,11 +14,11 @@ drive.mount('/content/drive')
 
 
 # Load the CSV file
-data = pd.read_csv('/content/drive/MyDrive/Maram/Text/Features_Extraction_from_text/Features_full_Text/LIWC/LIWC-22_fultxt.csv')
-label=pd.read_excel('/content/drive/MyDrive/Maram/label_of_Particapent.xlsx')
+data = pd.read_csv('/content/drive/MyDrive/Maram/Text/Features_Extraction_from_text/Features_full_Text/LIWC/LIWC_fulltxt_with_labels.csv')
+
 # Separate features (X) and labels (y)
-X_combined = data.drop('PID', axis=1).values  # Features without the label column
-y_combined = label['CAI State'].values  # Labels column
+X_combined = data.drop(['PID','CAI State'], axis=1).values  # Features without the label column
+y_combined = data['CAI State'].values  # Labels column
 
 
 LR_model = LogisticRegression(max_iter=1000)
@@ -72,8 +72,6 @@ total_confusion = sum(confusion_matrices)
 
 print("\n Confusion Matrix:")
 print(total_confusion)
-
-
 
 plt.figure(figsize=(6, 5))
 sns.heatmap(total_confusion, annot=True, fmt='d', cmap='Blues',
