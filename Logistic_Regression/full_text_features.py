@@ -1,5 +1,7 @@
 import pandas as pd
 import numpy as np
+import matplotlib.pyplot as plt
+import seaborn as sns
 from sklearn.linear_model import LogisticRegression
 from sklearn.model_selection import StratifiedKFold, cross_val_score
 from sklearn.metrics import accuracy_score, precision_score, recall_score, f1_score, confusion_matrix
@@ -18,7 +20,7 @@ label=pd.read_excel('/content/drive/MyDrive/Maram/label_of_Particapent.xlsx')
 X_combined = data.drop('PID', axis=1).values  # Features without the label column
 y_combined = label['CAI State'].values  # Labels column
 
-# Initialize Random Forest model
+
 LR_model = LogisticRegression(max_iter=1000)
 
 # Set up Stratified K-Fold Cross-Validation
@@ -72,8 +74,6 @@ print("\n Confusion Matrix:")
 print(total_confusion)
 
 
-import matplotlib.pyplot as plt
-import seaborn as sns
 
 plt.figure(figsize=(6, 5))
 sns.heatmap(total_confusion, annot=True, fmt='d', cmap='Blues',
