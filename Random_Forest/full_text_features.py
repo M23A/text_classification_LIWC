@@ -68,8 +68,7 @@ print(f"F1 Score:  {np.mean(f1s):.2f} ± {np.std(f1s):.2f}")
 total_confusion = sum(confusion_matrices)
 print("\n Confusion Matrix:")
 print(total_confusion)
-import matplotlib.pyplot as plt
-import seaborn as sns
+
 plt.figure(figsize=(6, 5))
 sns.heatmap(total_confusion, annot=True, fmt='d', cmap='Blues',
             xticklabels=["Pred 0", "Pred 1"],
