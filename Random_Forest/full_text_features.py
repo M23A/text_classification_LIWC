@@ -1,5 +1,7 @@
 import pandas as pd
 import numpy as np
+import matplotlib.pyplot as plt
+import seaborn as sns
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.model_selection import StratifiedKFold, cross_val_score
 from sklearn.metrics import accuracy_score, precision_score, recall_score, f1_score, confusion_matrix
@@ -10,12 +12,12 @@ from google.colab import drive
 drive.mount('/content/drive')
 
 # Load the CSV file
-data = pd.read_csv('/content/drive/MyDrive/Maram/Text/Features_Extraction_from_text/Features_full_Text/LIWC/LIWC-22_fultxt.csv')
 
-label=pd.read_excel('/content/drive/MyDrive/Maram/label_of_Particapent.xlsx')
+data = pd.read_csv('/content/drive/MyDrive/Maram/Text/Features_Extraction_from_text/Features_full_Text/LIWC/LIWC_fulltxt_with_labels.csv')
+
 # Separate features (X) and labels (y)
-X_combined = data.drop('PID', axis=1).values  # Features without the label column
-y_combined = label['CAI State'].values  # Labels column
+X_combined = data.drop(['PID','CAI State'], axis=1).values  # Features without the label column
+y_combined = data['CAI State'].values  # Labels column
 
 
 # Initialize Random Forest model
@@ -62,7 +64,7 @@ print(f"Precision: {np.mean(precisions):.2f} ± {np.std(precisions):.2f}")
 print(f"Recall:    {np.mean(recalls):.2f} ± {np.std(recalls):.2f}")
 print(f"F1 Score:  {np.mean(f1s):.2f} ± {np.std(f1s):.2f}")
 
-# confusion matrices 
+# confusion matrices
 total_confusion = sum(confusion_matrices)
 print("\n Confusion Matrix:")
 print(total_confusion)
