@@ -3,13 +3,13 @@
 | Model     | Accuracy | Precision | Recall | F1 Score |
 |-----------|----------|-----------|--------|----------|
 |    LR     |0.58 ± 0.19|0.52 ± 0.26|0.58 ± 0.19|0.53 ± 0.23|
-|    RF     |0.62 ± 0.23|0.57 ± 0.31|0.62 ± 0.23|0.56 ± 0.28|
+|    RF     |0.64 ± 0.28|0.66 ± 0.32|0.64 ± 0.28|0.62 ± 0.30|
 |    SVM    |          |           |        |          |
 |    MLP    |          |           |        |          |
 
 |   LR   |   RF   |  SVM  |  MLP  |
 |--------|--------|-------|-------|
-|    ![image](https://github.com/user-attachments/assets/87fcc40a-fce9-412d-9471-8ccb41dae917)|        |       |       |
+|![image](https://github.com/user-attachments/assets/87fcc40a-fce9-412d-9471-8ccb41dae917)|![image](https://github.com/user-attachments/assets/1801e1e8-f390-4ac9-ad50-4dce3758a7c0)|       |       |
 
 ## Evaluation Metrics for Chunks
 
