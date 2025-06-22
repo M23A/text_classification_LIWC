@@ -20,8 +20,9 @@
 |    LR     |0.64 ± 0.04|0.64 ± 0.04|0.64 ± 0.04|0.63 ± 0.04|
 |    RF     |0.66 ± 0.04|0.66 ± 0.04|0.66 ± 0.04|0.65 ± 0.04|
 |    SVM    |0.67 ± 0.04|0.68 ± 0.04|0.67 ± 0.04|0.66 ± 0.04|
-|    MLP    |0.55 ± 0.05          |0.54 ± 0.05           |0.55 ± 0.05        |0.53 ± 0.05          |
+|    MLP    |0.59 ± 0.04         |0.58 ± 0.04         |0.59 ± 0.04        |0.58 ± 0.04         |
 
 |   LR   |   RF   |  SVM  |  MLP  |
 |--------|--------|-------|-------|
-|   ![image](https://github.com/user-attachments/assets/893a0170-2971-4a4c-9a13-4d6ef3470de4)|<img width="404" alt="image" src="https://github.com/user-attachments/assets/15a12531-1887-456e-bd65-63c990ef9625" />|![image](https://github.com/user-attachments/assets/aa072624-832a-41b2-a18e-54bb5fc37e1d)|![image](https://github.com/user-attachments/assets/b16dda12-cb87-4ef8-a55a-e26b6fd62e9d)|
+|   ![image](https://github.com/user-attachments/assets/893a0170-2971-4a4c-9a13-4d6ef3470de4)|<img width="404" alt="image" src="https://github.com/user-attachments/assets/15a12531-1887-456e-bd65-63c990ef9625" />|![image](https://github.com/user-attachments/assets/aa072624-832a-41b2-a18e-54bb5fc37e1d)|<img width="391" alt="image" src="https://github.com/user-attachments/assets/1b3ca0fc-7709-4e67-9763-4df3d34ceb3a" />
+|
