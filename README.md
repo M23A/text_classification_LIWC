@@ -10,8 +10,7 @@
 
 |   LR   |   RF   |  SVM  |  MLP  |
 |--------|--------|-------|-------|
-|![image](https://github.com/user-attachments/assets/87fcc40a-fce9-412d-9471-8ccb41dae917)|![image](https://github.com/user-attachments/assets/1801e1e8-f390-4ac9-ad50-4dce3758a7c0)|![image](https://github.com/user-attachments/assets/ac0f88ae-20f6-4e15-8077-2467b0bcb877)|![image](https://github.com/user-attachments/assets/81e9621c-eb74-4241-8212-be9fd072c0bd)
-       |
+|![image](https://github.com/user-attachments/assets/87fcc40a-fce9-412d-9471-8ccb41dae917)|<img width="383" alt="image" src="https://github.com/user-attachments/assets/9ac0f29a-2471-4cbc-b8fe-4ffe7e72f1fc" />|![image](https://github.com/user-attachments/assets/ac0f88ae-20f6-4e15-8077-2467b0bcb877)|![image](https://github.com/user-attachments/assets/81e9621c-eb74-4241-8212-be9fd072c0bd)|
 
 ## Evaluation Metrics for Chunks
 
