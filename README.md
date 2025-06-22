@@ -5,12 +5,13 @@
 |    LR     |0.58 ± 0.19|0.52 ± 0.26|0.58 ± 0.19|0.53 ± 0.23|
 |    RF     |0.64 ± 0.28|0.66 ± 0.32|0.64 ± 0.28|0.62 ± 0.30|
 |    SVM    |0.57 ± 0.22|0.52 ± 0.29|0.57 ± 0.22|0.52 ± 0.25|
-|    MLP    |0.66 ± 0.16          |0.66 ± 0.24           |0.66 ± 0.16        |0.62 ± 0.20          |
+|    MLP    |0.59 ± 0.14          |0.59 ± 0.18          |0.59 ± 0.14        |0.57 ± 0.15     |
 
 
 |   LR   |   RF   |  SVM  |  MLP  |
 |--------|--------|-------|-------|
-|![image](https://github.com/user-attachments/assets/87fcc40a-fce9-412d-9471-8ccb41dae917)|<img width="383" alt="image" src="https://github.com/user-attachments/assets/9ac0f29a-2471-4cbc-b8fe-4ffe7e72f1fc" />|![image](https://github.com/user-attachments/assets/ac0f88ae-20f6-4e15-8077-2467b0bcb877)|![image](https://github.com/user-attachments/assets/81e9621c-eb74-4241-8212-be9fd072c0bd)|
+|![image](https://github.com/user-attachments/assets/87fcc40a-fce9-412d-9471-8ccb41dae917)|<img width="383" alt="image" src="https://github.com/user-attachments/assets/9ac0f29a-2471-4cbc-b8fe-4ffe7e72f1fc" />|![image](https://github.com/user-attachments/assets/ac0f88ae-20f6-4e15-8077-2467b0bcb877)|<img width="395" alt="image" src="https://github.com/user-attachments/assets/112e9c3a-a73c-43a8-a334-94cf0f51e077" />
+|
 
 ## Evaluation Metrics for Chunks
 
