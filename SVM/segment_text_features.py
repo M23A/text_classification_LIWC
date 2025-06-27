@@ -42,7 +42,7 @@ for train_index, test_index in gkf.split(X_combined, y_combined, groups=person_i
     # Initialize StandardScaler
     scaler = StandardScaler()
 
-    # Scale the features (fit the scaler on the training set and transform both train and test data)
+    # Scale the features 
     X_train_scaled = scaler.fit_transform(X_train)
     X_test_scaled = scaler.transform(X_test)
     # Fit the model on the training data
