@@ -6,4 +6,3 @@ Model implementations using both BERT and LIWC features
 
 Feature sets extracted from both full text and chunked text
 
-All necessary feature files are also uploaded.
