@@ -42,13 +42,13 @@ for train_index, test_index in gkf.split(X_combined, y_combined, groups=person_i
     # Initialize StandardScaler
     scaler = StandardScaler()
 
-    # Scale the features (fit the scaler on the training set and transform both train and test data)
+    # Scale the features 
     X_train_scaled = scaler.fit_transform(X_train)
     X_test_scaled = scaler.transform(X_test)
-   
+
     # Fit the model on the training data
     LR_model.fit(X_train_scaled, y_train)
-   
+
     # Predict on the test set
     y_pred = LR_model.predict(X_test_scaled)
 
@@ -71,7 +71,7 @@ print(f"Precision: {np.mean(precisions):.2f} ± {np.std(precisions):.2f}")
 print(f"Recall:    {np.mean(recalls):.2f} ± {np.std(recalls):.2f}")
 print(f"F1 Score:  {np.mean(f1s):.2f} ± {np.std(f1s):.2f}")
 
-# confusion matrices 
+# confusion matrices
 total_confusion = sum(confusion_matrices)
 print("\n Confusion Matrix:")
 print(total_confusion)
