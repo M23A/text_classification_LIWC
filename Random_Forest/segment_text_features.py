@@ -20,7 +20,7 @@ y_combined = data['CAI State'].values  # Labels column
 person_ids = data['filename']
 
 # Initialize Random Forest model
-rf_model = RandomForestClassifier()
+rf_model = RandomForestClassifier(random_state=42)
 
 gkf = GroupKFold(n_splits=10)
 # Store metrics per fold
