@@ -20,8 +20,8 @@ data = pd.read_csv('/content/drive/MyDrive/Maram/Text/Features_Extraction_from_t
 X_combined = data.drop(['PID','CAI State'], axis=1).values  # Features without the label column
 y_combined = data['CAI State'].values  # Labels column
 
-# Initialize the SVM model 
-svm_model = SVC(kernel='rbf',C=1 ,gamma='scale', probability=True)  
+# Initialize the SVM model
+svm_model = SVC(kernel='rbf',C=1 ,gamma='scale', probability=True)
 
 # Set up Stratified K-Fold Cross-Validation
 kf = StratifiedKFold(n_splits=10, shuffle=True, random_state=42)
@@ -40,7 +40,7 @@ for train_index, test_index in kf.split(X_combined, y_combined):
     y_train, y_test = y_combined[train_index], y_combined[test_index]
     # Initialize StandardScaler
     scaler = StandardScaler()
-    # Scale the features (fit the scaler on the training set and transform both train and test data)
+    # Scale the features 
     X_train_scaled = scaler.fit_transform(X_train)
     X_test_scaled = scaler.transform(X_test)
     # Fit the model on the training data
@@ -81,4 +81,3 @@ plt.title("Cumulative Confusion Matrix (Heatmap)")
 plt.xlabel("Predicted Label")
 plt.ylabel("True Label")
 plt.show()
-
