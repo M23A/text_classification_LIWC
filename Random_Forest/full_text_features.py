@@ -3,7 +3,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 import seaborn as sns
 from sklearn.ensemble import RandomForestClassifier
-from sklearn.model_selection import StratifiedKFold, cross_val_score
+from sklearn.model_selection import GroupKFold, cross_val_score
 from sklearn.metrics import accuracy_score, precision_score, recall_score, f1_score, confusion_matrix
 from sklearn.preprocessing import StandardScaler
 from google.colab import drive
@@ -40,7 +40,7 @@ for train_index, test_index in kf.split(X_combined, y_combined):
 
      # Initialize StandardScaler
     scaler = StandardScaler()
-    # Scale the features (fit the scaler on the training set and transform both train and test data)
+    # Scale the features 
     X_train_scaled = scaler.fit_transform(X_train)
     X_test_scaled = scaler.transform(X_test)
     # Fit the model on the training data
@@ -68,7 +68,8 @@ print(f"F1 Score:  {np.mean(f1s):.2f} ± {np.std(f1s):.2f}")
 total_confusion = sum(confusion_matrices)
 print("\n Confusion Matrix:")
 print(total_confusion)
-
+import matplotlib.pyplot as plt
+import seaborn as sns
 plt.figure(figsize=(6, 5))
 sns.heatmap(total_confusion, annot=True, fmt='d', cmap='Blues',
             xticklabels=["Pred 0", "Pred 1"],
